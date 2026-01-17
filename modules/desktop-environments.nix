@@ -7,19 +7,30 @@
     # Security Polkit
     security.polkit.enable = true;
     
+    # Gnome Keyring
+    services.gnome.gnome-keyring.enable = true;
+    
 	# Hyprland
 	programs.hyprland = {
                 enable = true;
-                portalPackage = pkgs.xdg-desktop-portal-hyprland;
         };
+
+    xdg.portal = {
+        enable = true;
+        extraPortals = [
+            pkgs.xdg-desktop-portal-gtk
+        ];
+    };
+
 
         environment.systemPackages = [
                 pkgs.hyprpaper
                 pkgs.hyprsunset
                 pkgs.hyprshot
                 pkgs.hyprtoolkit
-                pkgs.wofi
                 pkgs.polkit_gnome
+                pkgs.uwsm
+                pkgs.wofi
         ];
 
 	# KDE Plasma

@@ -7,6 +7,8 @@
 	programs.neovim.defaultEditor = true;
     hardware.bluetooth.enable = true;
 
+    services.flatpak.enable = true;
+
     programs.appimage = {
         enable = true;
         binfmt = true;
@@ -20,7 +22,6 @@
         pkgs.flatpak
         pkgs.github-desktop
 		pkgs.gnome-disk-utility
-        pkgs.gnome-keyring
 		pkgs.kdePackages.kdenlive
 		pkgs.librewolf
 		pkgs.nwg-look
