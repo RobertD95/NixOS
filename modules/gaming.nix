@@ -2,8 +2,14 @@
 
 {
 
-	programs.steam = {
-		enable = true;
+	programs = {
+		steam = {
+			enable = true;
+		};
+		java = {
+			enable = true;
+			package = pkgs.javaPackages.compiler.temurin-bin.jdk-25;
+		};
 	};
 
 	environment.systemPackages = [
@@ -11,11 +17,9 @@
 		pkgs.retroarch
 		pkgs.bottles
 		pkgs.heroic
-
-        # Game Specific Launchers
+		# Game Specific Launchers
 		pkgs.xivlauncher
-        pkgs.prismlauncher
-
+		pkgs.prismlauncher
 		# Extra
 		pkgs.mangohud
 		pkgs.lsfg-vk
