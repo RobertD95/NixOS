@@ -30,6 +30,7 @@
 	environment.systemPackages = with pkgs; [
 		pkgs.alacritty                  # Terminal
 		pkgs.appimage-run               # AppImage
+		pkgs.blockbench			# Editing Tool
 		pkgs.bluetui                    # Bluetooth Manager
 		pkgs.discord                    # Gaming Chat
 		pkgs.droidcam                   # Phone Camera to PC
@@ -47,7 +48,6 @@
 		pkgs.resources                  # System Monitoring Program
 		pkgs.swaynotificationcenter     # Notifications
 		pkgs.telegram-desktop           # Phone/Desktop Chat
-		pkgs.pkgs.ungoogled-chromium    # Alternate Web Browser
 		pkgs.vlc                        # Video Player
 		pkgs.waybar                     # Bar to Utilize certain tools
 
