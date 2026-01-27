@@ -1,13 +1,18 @@
 { config, pkgs, ...}:
-
-{
-
+let
+	obs-plugins = pkgs.obs-studio-plugins;
+in {
 	# Program Options
 	programs = {
 		neovim = {
 			enable = true;
 			defaultEditor = true;
         	};
+		obs-studio = {
+			enable = true;
+			package = pkgs.obs-studio;
+			plugins = [ obs-plugins.obs-multi-rtmp obs-plugins.obs-vkcapture ];
+		};
 		droidcam.enable = true;
 	};
 
@@ -40,7 +45,6 @@
 		pkgs.kdePackages.kdenlive       # Video Editor
 		pkgs.librewolf                  # Web Browser
 		pkgs.nwg-look                   # Customization for Hyprland
-		pkgs.obs-studio                 # Streaming Tool
 		pkgs.obsidian                   # Note Taking Tool
 		pkgs.pavucontrol                # Audio Controller
 		pkgs.protonup-qt                # Proton Updater
