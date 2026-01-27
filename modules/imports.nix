@@ -9,5 +9,6 @@
 	./programs.nix
 	./settings.nix
 	./network.nix
+	./updates.nix
 	];
 }
