@@ -20,9 +20,6 @@
 	# Select internationalisation properties.
 	i18n.defaultLocale = "en_CA.UTF-8";
 
-	# x11 Windows
-	services.xserver.enable = true;
-
 	# Configure keymap in X11
 	services.xserver.xkb = {
 		layout = "us";
@@ -54,9 +51,6 @@
 		extraGroups = [ "networkmanager" "wheel" ];
 	};
 
-	# Allow unfree packages
-	nixpkgs.config.allowUnfree = true;
-
 	#programs.mtr.enable = true;
 	#programs.gnupg.agent = {
 	#	enable = true;
@@ -65,4 +59,6 @@
 
 	# Enable the OpenSSH daemon.
 	#services.openssh.enable = true;
+	nix.settings.experimental-features = [ "nix-command" "flakes" ];
+	nixpkgs.config.allowUnfree = true;
 }

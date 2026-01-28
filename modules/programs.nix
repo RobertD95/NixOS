@@ -15,7 +15,6 @@ in {
 		};
 		droidcam.enable = true;
 	};
-
 	# Hardware Options
 	hardware = {
 		bluetooth = {
@@ -23,8 +22,7 @@ in {
 		};
 
 	};
-	
-	# Services Options
+	# Service Options
 	services = {
 		flatpak = {
 			enable = true;
@@ -44,11 +42,13 @@ in {
 		pkgs.gnome-disk-utility         # Disk Utility
 		pkgs.kdePackages.kdenlive       # Video Editor
 		pkgs.librewolf                  # Web Browser
+    pkgs.libnotify                  # Notifications
 		pkgs.nwg-look                   # Customization for Hyprland
 		pkgs.obsidian                   # Note Taking Tool
 		pkgs.pavucontrol                # Audio Controller
 		pkgs.protonup-qt                # Proton Updater
 		pkgs.qjackctl                   # Audio Channeller Tool
+		pkgs.r2modman
 		pkgs.resources                  # System Monitoring Program
 		pkgs.swaynotificationcenter     # Notifications
 		pkgs.telegram-desktop           # Phone/Desktop Chat
