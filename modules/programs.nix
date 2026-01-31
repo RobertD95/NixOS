@@ -1,4 +1,4 @@
-{ config, pkgs, ...}:
+{ pkgs, ... }:
 let
 	obs-plugins = pkgs.obs-studio-plugins;
 in {
@@ -13,31 +13,46 @@ in {
 			package = pkgs.obs-studio;
 			plugins = [ obs-plugins.obs-multi-rtmp obs-plugins.obs-vkcapture ];
 		};
-		droidcam.enable = true;
+		droidcam = {
+      enable = true;
+    };
+    appimage = {
+      enable = true;
+      binfmt = true;
+      package = pkgs.appimage-run;
+    };
+    kdeconnect = {
+      enable = true;
+      #package = pkgs.kdePackages.kdeconnect-kde;
+    };
 	};
+  virtualisation = {
+    waydroid = {
+      enable = true;
+      package = pkgs.waydroid-nftables;
+    };
+  };
 	# Hardware Options
 	hardware = {
 		bluetooth = {
 			enable = true;
 		};
-
 	};
 	# Service Options
 	services = {
 		flatpak = {
 			enable = true;
+      package = pkgs.flatpak;
 		};
-
 	};
 
 	environment.systemPackages = with pkgs; [
 		pkgs.alacritty                  # Terminal
 		pkgs.appimage-run               # AppImage
-		pkgs.blockbench			# Editing Tool
+		pkgs.blockbench           			# Editing Tool
 		pkgs.bluetui                    # Bluetooth Manager
 		pkgs.discord                    # Gaming Chat
-		pkgs.droidcam                   # Phone Camera to PC
-		pkgs.flatpak                    # Program Installing tool
+    pkgs.git
 		pkgs.github-desktop             # Github Desktop Program
 		pkgs.gnome-disk-utility         # Disk Utility
 		pkgs.kdePackages.kdenlive       # Video Editor
@@ -52,8 +67,8 @@ in {
 		pkgs.resources                  # System Monitoring Program
 		pkgs.swaynotificationcenter     # Notifications
 		pkgs.telegram-desktop           # Phone/Desktop Chat
+    pkgs.usbutils
 		pkgs.vlc                        # Video Player
 		pkgs.waybar                     # Bar to Utilize certain tools
-
 	];
 }

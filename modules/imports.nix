@@ -1,11 +1,12 @@
-{ pkgs, inputs, ... }:
+{ ... }:
 {
 	imports =
 	[
-	./desktop-environments.nix
+	./desktop-environment.nix
 	./fonts.nix
-	./hyprland.nix
 	./gaming.nix
+  ./gpu.nix
+  ./kernel.nix
 	./network.nix
 	./programs.nix
 	./settings.nix

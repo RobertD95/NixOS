@@ -22,9 +22,9 @@
 		options = [ "fmask=0077" "dmask=0077" ];
 	};
         fileSystems."/home" = {
-                device = "/dev/disk/by-uuid/c7f48b8c-85ba-4d2d-b559-5aa9e113333f";
+                device = "/dev/disk/by-uuid/efabf536-1366-4baf-9b77-7e9af972d5ca";
                 fsType = "ext4";
-                options = [ "defaults" "nofail" ]; # "nofail" prevents boot issues if drive is missing
+                options = [ "defaults" "nofail" ];
         };
 
         fileSystems."/games" = {

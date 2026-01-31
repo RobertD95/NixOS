@@ -1,5 +1,4 @@
 { pkgs, ... }:
-
 {
 
 	programs = {
@@ -15,7 +14,6 @@
 	environment.systemPackages = [
 		pkgs.lutris
 		pkgs.retroarch
-		pkgs.bottles
 		pkgs.heroic
 		# Game Specific Launchers
 		pkgs.xivlauncher
