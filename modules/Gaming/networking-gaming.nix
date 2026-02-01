@@ -1,18 +1,15 @@
 { ... }:
 {
-	networking = {
-		enableIPv6 = false;
+  networking = {
 		firewall = {
 			enable = true;
 			allowedTCPPorts = [ 
-                          5520 #Hytale
+                          #Other
                         ];  
 			allowedUDPPorts = [
                           5520 #Hytale 
                         ];
 		};
-    nftables = {
-      enable = true;
-    };
 	};
+
 }

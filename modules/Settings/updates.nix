@@ -1,5 +1,4 @@
 { ... }:
-
 {
 	# Auto Update
 	system.autoUpgrade = {
