@@ -4,21 +4,21 @@ let
 in
 
 {
-  services.displayManager.ly.enable = true;
+  services.displayManager.ly = {
+    enable = true;
+    settings = {
+      setup_cmd = "/etc/nixos/scripts/hyprland-uwsm-ly-setup.sh";
+    };
+  };
 	
   programs = {
     hyprland = {
 		  enable = true;
+      withUWSM = true;
 		  package = unstable.hyprland;
-      withUWSM = false;
       xwayland.enable = true;
     };
-#   uwsm = {
-#     enable = true;
-#     package = unstable.uwsm;
-#   };  
-	};
-
+  };
 
 	# Hyprland Stuff (Stable)
 	environment.systemPackages = [

@@ -16,7 +16,15 @@ let
     pkgs.mangohud
     pkgs.protonup-qt
   ];
-in
-{
+in {
+  programs = {
+    steam = {
+      enable = true;
+    };
+    java = {
+      enable = true;
+      package = pkgs.javaPackages.compiler.temurin-bin.jdk-25;
+    };
+  };
   environment.systemPackages = gaming-launchers ++ specific-launchers ++ game-extra;
 }

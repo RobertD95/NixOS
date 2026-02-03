@@ -5,7 +5,7 @@
       dirs = [
         ./hardware
         ./modules
-        
+        ./settings
         ];
       allFiles = builtins.concatLists (map (dir: lib.filesystem.listFilesRecursive dir) dirs);
     in
