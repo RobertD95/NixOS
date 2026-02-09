@@ -1,18 +1,16 @@
 {
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
-    nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
-    nyxpkgs-unstable.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
+    pkgs.url = "github:nixos/nixpkgs/nixos-25.11";
+    nix.url = "github:nixos/nixpkgs/nixos-unstable";
+    nyx.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
   };
 
-  outputs = { self, nixpkgs, nixpkgs-unstable, nyxpkgs-unstable, ... } @ inputs:
-  {
-    nixosConfigurations.Tea = nixpkgs.lib.nixosSystem {
+  outputs = { self, ... } @ inputs:
+  {  
+    nixosConfigurations.Tea = inputs.pkgs.lib.nixosSystem {
+      system = "x86_64-linux";
       specialArgs = { inherit inputs; };
-      modules = [
-        ./configuration.nix
-        nyxpkgs-unstable.nixosModules.default
-      ];
+      modules = [ ./configuration.nix ];
     };
   };
 }
