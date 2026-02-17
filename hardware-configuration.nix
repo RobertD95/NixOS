@@ -20,25 +20,25 @@
 		fsType = "vfat";
 		options = [ "fmask=0077" "dmask=0077" ];
 	};
-  fileSystems."/home" = {
-    device = "/dev/disk/by-uuid/efabf536-1366-4baf-9b77-7e9af972d5ca";
-    fsType = "ext4";
-    options = [ "defaults" "nofail" ];
-  };
-  fileSystems."/games" = {
-    device = "/dev/disk/by-uuid/5644ea5e-7e19-4ace-980c-a64a7f10b456";
-    fsType = "ext4";
-    options = [ "defaults" "nofail" ];
-	};
-  fileSystems."/home/robby/Stream" = {
-    device = "/dev/disk/by-uuid/4e4a02bb-e504-4c9d-abd3-bec8d9bad8aa";
+	fileSystems."/home" = {
+		device = "/dev/disk/by-uuid/efabf536-1366-4baf-9b77-7e9af972d5ca";
 		fsType = "ext4";
 		options = [ "defaults" "nofail" ];
-  };
-  fileSystems."/home/robby/Video-Edit" = {
-    device = "/dev/disk/by-uuid/3ebe6ea7-737c-4c83-a5aa-9769504649bd";
-    fsType = "ext4";
-    options = [ "defaults" "nofail" ];
+	};
+	fileSystems."/games" = {
+		device = "/dev/disk/by-uuid/5644ea5e-7e19-4ace-980c-a64a7f10b456";
+		fsType = "ext4";
+	options = [ "defaults" "nofail" ];
+	};
+	fileSystems."/home/robby/Stream" = {
+		device = "/dev/disk/by-uuid/4e4a02bb-e504-4c9d-abd3-bec8d9bad8aa";
+		fsType = "ext4";
+		options = [ "defaults" "nofail" ];
+	};
+	fileSystems."/home/robby/Video-Edit" = {
+		device = "/dev/disk/by-uuid/3ebe6ea7-737c-4c83-a5aa-9769504649bd";
+		fsType = "ext4";
+	options = [ "defaults" "nofail" ];
 	};
 
 	swapDevices = [ ];
