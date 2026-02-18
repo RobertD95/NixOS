@@ -10,6 +10,26 @@ in {
 			withUWSM = true;
 			package = nix.hyprland;
 		};
-		uwsm.enable= true;
+		uwsm = {
+			enable= true;
+		};
+		steam = {
+			enable = true;  # Gaming
+		};
+		java = {
+			enable = true;
+			package = pkgs.javaPackages.compiler.temurin-bin.jdk-25;
+		};
+		neovim = {	# Text Editor
+			enable = true;
+		};
+		appimage = {	# AppImage
+			enable = true;
+			binfmt = true;
+			package = pkgs.appimage-run;
+		};
+		droidcam.enable = true;
+		kdeconnect.enable = true;
+	};
 	};
 }

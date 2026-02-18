@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 {
   services = {
 	  displayManager.ly = { # Enable LY & Fix (UWSM)
@@ -19,6 +19,10 @@
       jack.enable = true;
       #media-session.enable = true;
     };
+    flatpak = {
+		  enable = true;
+		  package = pkgs.flatpak;
+	  };
     printing.enable = true; # Printer
     gnome.gnome-keyring.enable = true;
     lact.enable = true;  # GPU Over and Under Clock

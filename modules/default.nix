@@ -1,6 +1,7 @@
 { pkgs, inputs, ... }:
 {
   imports = [
+		./fonts.nix
     ./hardware.nix
 		./networking.nix
 		./programs.nix
