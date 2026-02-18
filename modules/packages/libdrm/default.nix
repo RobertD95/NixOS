@@ -1,11 +1,11 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 let
 	nix = inputs.nix.legacyPackages.x86_64-linux;
 	nyx = inputs.nyx.legacyPackages.x86_64-linux;
 in
 {
   environment.systemPackages = [
-    pkgs.libdrm_git
-    pkgs.libdrm32_git
+    nyx.libdrm_git
+    nyx.libdrm32_git
   ];
 }
