@@ -5,9 +5,6 @@ let
 	kdepkg = pkgs.kdePackages;
 in
 {
-
-	services.udisks2.enable = true;
-
 	# Fonts
 	fonts.packages = [
 		pkgs.font-awesome
