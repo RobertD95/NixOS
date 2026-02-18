@@ -5,55 +5,6 @@ let
 	kdepkg = pkgs.kdePackages;
 in
 {
-	# GPU
-	hardware = {
-		graphics = {
-			enable = true;
-			package = nyx.mesa_git;
-			enable32Bit = true;
-			package32 = nyx.mesa32_git;
-		};
-		amdgpu = {
-			initrd.enable = true;
-			opencl.enable = true;
-		};
-	};
-
-	# LY Greeter
-	services.displayManager.ly = {
-		enable = true;
-		settings.setup_cmd = "/etc/nixos/scripts/hyprland-uwsm-ly-setup.sh";
-	};
-	
-	# Hyprland
-	programs = {
-		hyprland = {
-			enable = true;
-			withUWSM = true;
-			package = nix.hyprland;
-		};
-		uwsm.enable= true;
-	};
-	services.lact.enable = true;
-
-	# Hyprland Stuff (Stable)
-	environment.systemPackages = [
-		pkgs.alacritty
-		pkgs.dunst
-		pkgs.kdePackages.ark
-		pkgs.kdePackages.dolphin
-		pkgs.libnotify
-		pkgs.nwg-look #style change tool
-		pkgs.waybar
-		pkgs.wofi
-		# GPU
-		nyx.libdrm_git
-		nyx.libdrm32_git
-		# Other
-		pkgs.git
-		pkgs.ffmpeg
-		pkgs.qtalarm
-	];
 
 	services.udisks2.enable = true;
 
