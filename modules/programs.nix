@@ -31,5 +31,4 @@ in {
 		droidcam.enable = true;
 		kdeconnect.enable = true;
 	};
-	};
 }
