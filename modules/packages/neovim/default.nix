@@ -1,16 +1,16 @@
 { pkgs, ... }:
 {
   imports = [
-    config.nix
+    # config.nix
   ];
   programs.nvf = {
     enable = true;
     settings = {
       vim = {
         theme = {
-        enable = true;
-        name = "catppucin";
-        style = "mocha";
+          enable = true;
+          name = "catppucin";
+          style = "mocha";
         };
         viAlias = true;
         vimAlias = true;
