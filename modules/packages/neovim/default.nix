@@ -7,6 +7,11 @@
     enable = true;
     settings = {
       vim = {
+        theme = {
+        enable = true;
+        name = "catppucin";
+        style = "mocha";
+        };
         viAlias = true;
         vimAlias = true;
         lsp = {
@@ -15,11 +20,4 @@
       };
     };
   };
-  # vim = {
-  #   theme = {
-  #   enable = true;
-  #   name = "catppucin";
-  #   style = "mocha";
-  #   };
-  # }
 }
