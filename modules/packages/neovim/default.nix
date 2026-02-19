@@ -9,7 +9,7 @@
       vim = {
         theme = {
           enable = true;
-          name = "catppucin";
+          name = "catppuccin";
           style = "mocha";
         };
         viAlias = true;
