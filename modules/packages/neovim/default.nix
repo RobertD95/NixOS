@@ -11,7 +11,7 @@
           enable = true;
           name = "catppuccin";
           style = "mocha";
-          options.transparent = true;
+          transparent_background = true;
         };
         viAlias = true;
         vimAlias = true;
