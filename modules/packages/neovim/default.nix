@@ -15,11 +15,11 @@
       };
     };
   };
-  vim = {
-    theme = {
-    enable = true;
-    name = "catppucin";
-    style = "mocha";
-    };
-  }
+  # vim = {
+  #   theme = {
+  #   enable = true;
+  #   name = "catppucin";
+  #   style = "mocha";
+  #   };
+  # }
 }
