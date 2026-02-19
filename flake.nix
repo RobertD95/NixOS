@@ -5,7 +5,7 @@
 		nyx.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
 		nvf.url = "github:notashelf/nvf";
 	};
-  	outputs = { self, ..., nvf } @ inputs:
+  	outputs = { self, nvf, ... } @ inputs:
 	{
 		nixosConfigurations.Tea = inputs.pkgs.lib.nixosSystem {
 			system = "x86_64-linux";
