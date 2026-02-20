@@ -13,6 +13,7 @@
           style = "mocha";
           transparent = true;
         };
+        telescope.enable;
         viAlias = true;
         vimAlias = true;
         lsp = {
