@@ -3,8 +3,8 @@
   imports = [
     ./telescope.nix
     ./theme.nix
+    ./neo-tree.nix
   ];
-
   programs.nvf = {
     enable = true;
     settings = {

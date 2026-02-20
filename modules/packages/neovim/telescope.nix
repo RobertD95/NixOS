@@ -1,9 +1,8 @@
 { pkgs, ... }:
 {
-        programs.nvf.settings.vim.telescope ={
+        programs.nvf.settings.vim.telescope = {
                 enable = true;
                 #mappings = {
-
                 #};
         };
 }
