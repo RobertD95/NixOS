@@ -4,7 +4,7 @@
                 enable = true;        
                 mappings = {
                         markFile = "m";
-                        listMarks = "l";
+                        listMarks = "n";
                         file1 = "<C-j>";
                         file2 = "<C-k>";
                         file3 = "<C-l>";
