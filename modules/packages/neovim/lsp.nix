@@ -1,7 +1,10 @@
 { pkgs, ... }:
 {
         programs.nvf.settings.vim = {
-                languages.nix.enable = true;
+                languages.nix ={
+                        enable = true;
+                        lsp.enable = true;
+                };
                 lsp = {
                         enable = true;
 
