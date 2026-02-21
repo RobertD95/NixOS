@@ -1,13 +1,14 @@
 { pkgs, ... }:
 {
         programs.nvf.settings.vim = {
-                languages.nix ={
+                languages.nix = {
                         enable = true;
                         lsp.enable = true;
                 };
                 lsp = {
                         enable = true;
-
+                        formatOnSave = true;
                 };
+                autocomplete.nvim-cmp.enable = true;
         };
 }
