@@ -1,6 +1,6 @@
 { pkgs, ... }:
 {
-        programs.nvf.settings.vim = {
+        programs.nvf.settings.vim.telescope = {
                 enable = true;        
         };
 }
