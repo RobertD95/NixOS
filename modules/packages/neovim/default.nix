@@ -4,6 +4,7 @@
     ./telescope.nix
     ./theme.nix
     ./neo-tree.nix
+    ./harpoon.nix
   ];
   programs.nvf = {
     enable = true;
