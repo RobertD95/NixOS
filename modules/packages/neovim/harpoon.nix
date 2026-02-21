@@ -5,10 +5,10 @@
                 mappings = {
                         markFile = "a";
                         listMarks = "o";
-                        file1 = "<C-h>";
-                        file2 = "<C-j>";
-                        file3 = "<C-k>";
-                        file4 = "<c-l>";
+                        file1 = "<C-j>";
+                        file2 = "<C-k>";
+                        file3 = "<C-l>";
+                        file4 = "<c-;>";
                 };
         };
 }
