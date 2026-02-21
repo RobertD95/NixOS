@@ -1,9 +1,6 @@
 { pkgs, ... }:
 {
-programs.nvf.settings.vim = {
-        enable = true;        
+        programs.nvf.settings.vim = {
+                enable = true;        
         };
-      };
-    };
-  };
 }
