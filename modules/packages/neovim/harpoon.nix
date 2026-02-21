@@ -1,6 +1,6 @@
 { pkgs, ... }:
 {
-        programs.nvf.settings.vim.telescope = {
+        programs.nvf.settings.vim.navigation.harpoon = {
                 enable = true;        
         };
 }
