@@ -5,7 +5,7 @@
       nix = {
         enable = true;
         lsp.enable = true;
-        tresitter.enable = true;
+        treesitter.enable = true;
       };
       bash = {
         enable = true;
