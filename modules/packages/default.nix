@@ -11,7 +11,6 @@
     ./git
     ./home-manager
     ./hyprland
-    ./java
     ./kde
     ./libdrm
     ./libnotify
@@ -21,7 +20,9 @@
     ./qjackctl
     ./qtalarm
     ./steam
+    ./syntax
     ./waybar
     ./wofi
   ];
 }
+
