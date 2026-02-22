@@ -5,10 +5,17 @@
       nix = {
         enable = true;
         lsp.enable = true;
+        tresitter.enable = true;
+      };
+      bash = {
+        enable = true;
+        lsp.enable = true;
+        treesitter.enable = true;
       };
       python = {
         enable = true;
         lsp.enable = true;
+        treesitter.enable = true;
       };
     };
     lsp = {
