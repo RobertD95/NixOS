@@ -1,8 +1,9 @@
 { pkgs, ... }:
 {
   programs.kdeconnect.enable = true;
-  environment.systemPackages = [
-    pkgs.kdePackages.ark
-    pkgs.kdePackages.dolphin
+  environment.systemPackages = with pkgs; [
+    kdePackages.ark
+    kdePackages.dolphin
   ];
 }
+

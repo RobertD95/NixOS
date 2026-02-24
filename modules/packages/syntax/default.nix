@@ -6,8 +6,7 @@
       package = pkgs.javaPackages.compiler.temurin-bin.jdk-25;
     };
   };
-  environment.systemPackages = [
-    pkgs.python315
+  environment.systemPackages = with pkgs; [
+    python315
   ];
 }
-

@@ -1,6 +1,7 @@
 { pkgs, ... }:
 {
-  environment.systemPackages = [
-    pkgs.qtalarm
+  environment.systemPackages = with pkgs; [
+    qtalarm
   ];
 }
+

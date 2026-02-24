@@ -1,6 +1,7 @@
 { pkgs, ... }:
 {
-  environment.systemPackages = [
-    pkgs.nwg-look
+  environment.systemPackages = with pkgs; [
+    nwg-look
   ];
 }
+

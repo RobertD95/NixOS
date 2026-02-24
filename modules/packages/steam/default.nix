@@ -2,7 +2,8 @@
 {
   programs = {
     steam = {
-			enable = true;  # Gaming
-		};
+      enable = true; # Gaming
+    };
   };
 }
+
