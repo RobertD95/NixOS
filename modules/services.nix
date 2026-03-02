@@ -31,4 +31,3 @@
     udisks2.enable = true; # Used for KDE Dolphin
   };
 }
-
