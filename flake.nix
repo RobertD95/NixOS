@@ -4,6 +4,7 @@
     nix.url = "github:nixos/nixpkgs/nixos-unstable";
     nyx.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
     nvf.url = "github:notashelf/nvf";
+    hypr.url = "github:hyprwm/Hyprland";
   };
   outputs =
     { self, nvf, ... }@inputs:
