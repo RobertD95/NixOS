@@ -7,11 +7,7 @@ in
   programs = {
     hyprland = {
       enable = true;
-      withUWSM = true;
       package = hypr.hyprland;
-    };
-    uwsm = {
-      enable = true;
     };
   };
 }

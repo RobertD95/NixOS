@@ -5,6 +5,10 @@
     nyx.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
     nvf.url = "github:notashelf/nvf";
     hypr.url = "github:hyprwm/Hyprland";
+    hyprland-plugins = {
+      url = "github:hyprwm/hyprland-plugins";
+      inputs.hyprland.follows = "hypr";
+    };
   };
   outputs =
     { self, nvf, ... }@inputs:
