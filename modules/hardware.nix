@@ -8,9 +8,9 @@ in
   hardware = {
     graphics = {
       enable = true;
-      package = nyx.mesa_git;
+      package = nix.mesa_git;
       enable32Bit = true;
-      package32 = nyx.mesa32_git;
+      package32 = nix.mesa32_git;
     };
     amdgpu = {
       initrd.enable = true;
@@ -19,4 +19,3 @@ in
   };
   hardware.bluetooth.enable = true; # Bluetooth
 }
-

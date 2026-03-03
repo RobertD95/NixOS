@@ -9,6 +9,7 @@ in
       enable = true;
       withUWSM = true;
       package = hypr.hyprland;
+      portalPackage = hypr.xdg-desktop-portal-hyprland;
     };
   };
 }
