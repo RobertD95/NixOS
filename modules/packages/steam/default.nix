@@ -3,7 +3,12 @@
   programs = {
     steam = {
       enable = true; # Gaming
-      package = pkgs.steam-run;
+      package = pkgs.steam.override {
+        extraPkgs =
+          pkgs: with pkgs; [
+
+          ];
+      };
     };
   };
 }
