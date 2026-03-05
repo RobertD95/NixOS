@@ -13,7 +13,7 @@
                         url = "github:notashelf/nvf";
                 };
                 hyprland = {
-                        url = "github:hyprwm/Hyprland/tree/v0.53.3-b";
+                        url = "github:hyprwm/Hyprland/v0.53.3-b";
                 };
                 hyprland-plugins = {
                         url = "github:hyprwm/hyprland-plugins";
