@@ -4,11 +4,11 @@
     nix.url = "github:nixos/nixpkgs/nixos-unstable";
     nyx.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
     nvf.url = "github:notashelf/nvf";
-    hyprland.url = "github:hyprwm/Hyprland";
-    hyprland-plugins = {
-      url = "github:hyprwm/hyprland-plugins";
-      inputs.hyprland.follows = "hyprland";
-    };
+#hyprland.url = "github:hyprwm/Hyprland";
+#hyprland-plugins = {
+#url = "github:hyprwm/hyprland-plugins";
+#inputs.hyprland.follows = "hyprland";
+#};
   };
   outputs =
     { self, nvf, ... }@inputs:
