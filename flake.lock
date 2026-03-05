@@ -227,7 +227,7 @@
       },
       "original": {
         "owner": "hyprwm",
-        "ref": "v0.53.3-b",
+        "ref": "v0.53.3",
         "repo": "Hyprland",
         "type": "github"
       }
