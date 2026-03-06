@@ -21,19 +21,21 @@
                 pulse.enable = true;
                 jack.enable = true;
                 #media-session.enable = true;
-                extraConfig.pipewire."91-Virtual-sink" = {
-                        context.objects = [
-                                {
-                                        factory = "adapter";
-                                        args = {
-                                                "factory.name" = "support.null-audio-sink";
-                                                "node.name" = "Game-Audio";
-                                                "node.description" = "Game Audio";
-                                                "media.class" = "Audio/Duplex";
-                                                "audio.position" = [ "FL" "FR" ];
-                                        };
-                                }
-                        ];
+                extraConfig.pipewire ={
+                        "91-Virtual-sink" = {
+                                context.objects = [
+                                        {
+                                                factory = "adapter";
+                                                args = {
+                                                        "factory.name" = "support.null-audio-sink";
+                                                        "node.name" = "Game-Audio";
+                                                        "node.description" = "Game Audio";
+                                                        "media.class" = "Audio/Duplex";
+                                                        "audio.position" = [ "FL" "FR" ];
+                                                };
+                                        }
+                                ];
+                        };
                 };
         };
     flatpak = {
