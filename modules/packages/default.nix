@@ -17,6 +17,7 @@
     ./neovim
     ./nwg-look
     ./pavucontrol
+    ./pulse-audio
     ./qjackctl
     ./qtalarm
     ./steam
