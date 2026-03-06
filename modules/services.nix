@@ -21,21 +21,6 @@
                 pulse.enable = true;
                 jack.enable = true;
                 #media-session.enable = true;
-                wireplumber = {
-                        enable = true;
-                        extraConfig = {
-                                "10-virtual-sink.lua" = ''
-                                        create_object("factory", {
-                                                ["factory.name"] = "support.null-audio-sink",
-                                                ["node.name"] = "Game-Audio",
-                                                ["node.description"] = "Game Audio",
-                                                ["media.class"] = "Audio/Sink",
-                                                ["audio.position"] = "FL,FR"
-                                               
-                                        })
-                                '';
-                        };
-                };
                 extraConfig.pipewire."10-Virtual-Audio-Cable" = {
                         context.objects = [
                                 {
