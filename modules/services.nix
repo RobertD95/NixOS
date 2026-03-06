@@ -21,7 +21,7 @@
                 pulse.enable = true;
                 jack.enable = true;
                 #media-session.enable = true;
-                extraConfig.pipewire."10-Virtual-Audio-Cable" = {
+                extraConfig.pipewire."91-null-sinks" = {
                         context.objects = [
                                 {
                                         factory = "adapter";
