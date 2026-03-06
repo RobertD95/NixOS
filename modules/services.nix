@@ -20,7 +20,7 @@
                 alsa.support32Bit = true;
                 pulse.enable = true;
                 jack.enable = true;
-                media-session.enable = true;
+                #media-session.enable = true;
                 extraConfig.pipewire."91-null-sinks" = {
                         context.objects = [
                                 {
