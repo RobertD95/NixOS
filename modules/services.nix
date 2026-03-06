@@ -20,7 +20,8 @@
       pulse.enable = true;
       jack.enable = true;
       #media-session.enable = true;
-      extraConfig.pipewire."10-Virtual-Audio-Cable" = [
+      extraConfig.pipewire."10-Virtual-Audio-Cable" = {
+                context.objects = [
         {
                 factory = "adapter";
                 args = {
@@ -72,7 +73,9 @@
                 };
         }
 
-      ];
+                ];
+        
+       };
     };
     flatpak = {
       enable = true;
