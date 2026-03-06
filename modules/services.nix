@@ -21,7 +21,7 @@
                 pulse.enable = true;
                 jack.enable = true;
                 #media-session.enable = true;
-                extraConfig.pipewire ={
+                extraConfig.pipewire = {
                         "91-Virtual-sink" = {
                                 context.objects = [
                                         {
