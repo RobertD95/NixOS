@@ -21,7 +21,7 @@
                 pulse.enable = true;
                 jack.enable = true;
                 #media-session.enable = true;
-                wire-plumber.enable = true;
+                wireplumber.enable = true;
                 extraConfig.pipewire."10-Virtual-Audio-Cable" = {
                         context.objects = [
                                 {
