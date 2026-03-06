@@ -31,6 +31,7 @@
                                                 "node.description" = "Game Audio";
                                                 "media.class" = "Audio/Sink";
                                                 "audio.position" = [ "FL" "FR" ];
+                                                "monitor.channel-volumes" = true;
                                         };
                                 }
                         ];
