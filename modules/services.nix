@@ -21,26 +21,6 @@
                 pulse.enable = true;
                 jack.enable = true;
                 #media-session.enable = true;
-wireplumber.enable = true;
-wireplumber.extraConfig."10-virtual-duplex.lua" = ''
-  -- Create virtual sink (output)
-  create_object("factory", {
-    ["factory.name"] = "support.null-audio-sink",
-    ["node.name"] = "Virtual-Cable-Out",
-    ["node.description"] = "Virtual Audio Cable (Output)",
-    ["media.class"] = "Audio/Sink",
-    ["audio.position"] = "FL,FR"
-  })
-
-  -- Create virtual source (input)
-  create_object("factory", {
-    ["factory.name"] = "support.null-audio-source",
-    ["node.name"] = "Virtual-Cable-In",
-    ["node.description"] = "Virtual Audio Cable (Input)",
-    ["media.class"] = "Audio/Source/Virtual",
-    ["audio.position"] = "FL,FR"
-  })
-'';
                 extraConfig.pipewire."91-null-sinks" = {
                         context.objects = [
                                 {
@@ -50,7 +30,7 @@ wireplumber.extraConfig."10-virtual-duplex.lua" = ''
                                                 "node.name" = "Game-Audio";
                                                 "node.description" = "Game Audio";
                                                 "media.class" = "Audio/Sink";
-                                                "audio.position" = "FL,FR";
+                                                "audio.position" = [ "FL" "FR" ];
                                         };
                                 }
                         ];
