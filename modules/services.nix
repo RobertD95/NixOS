@@ -21,7 +21,7 @@
                 pulse.enable = true;
                 jack.enable = true;
                 #media-session.enable = true;
-services.pipewire.wireplumber.extraConfig."10-virtual-duplex.lua" = ''
+wireplumber.extraConfig."10-virtual-duplex.lua" = ''
   -- Create virtual sink (output)
   create_object("factory", {
     ["factory.name"] = "support.null-audio-sink",
