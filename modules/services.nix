@@ -11,72 +11,31 @@
       layout = "us";
       variant = "";
     };
-    # Audio
-    pulseaudio.enable = false;
-    pipewire = {
-      enable = true;
-      alsa.enable = true;
-      alsa.support32Bit = true;
-      pulse.enable = true;
-      jack.enable = true;
-      #media-session.enable = true;
-      extraConfig.pipewire."10-Virtual-Audio-Cable" = {
-                context.objects = [
-        {
-                factory = "adapter";
-                args = {
-                        "factory.name" = "support.null-audio-sink";
-                        "node.name" = "Game-Audio";
-                        "node.description" = "Game Audio";
-                        "media.class" = "Audio/Sink";
-                        "audio.position" = [ "FL" "FR" ];
-                };
-        }
-        {
-                factory = "adapter";
-                args = {
-                        "factory.name" = "support.null-audio-sink";
-                        "node.name" = "Music-Audio";
-                        "node.description" = "Music Audio";
-                        "media.class" = "Audio/Sink";
-                        "audio.position" = [ "FL" "FR" ];
-                };
-        }
-        {
-                factory = "adapter";
-                args = {
-                        "factory.name" = "support.null-audio-sink";
-                        "node.name" = "Browser-Audio";
-                        "node.description" = "Browser Audio";
-                        "media.class" = "Audio/Sink";
-                        "audio.position" = [ "FL" "FR" ];
-                };
-        }
-        {
-                factory = "adapter";
-                args = {
-                        "factory.name" = "support.null-audio-sink";
-                        "node.name" = "Voice-Chat-Audio";
-                        "node.description" = "Voice Chat Audio";
-                        "media.class" = "Audio/Sink";
-                        "audio.position" = [ "FL" "FR" ];
-                };
-        }
-        {
-                factory = "adapter";
-                args = {
-                        "factory.name" = "support.null-audio-sink";
-                        "node.name" = "Extra";
-                        "node.description" = "Extra";
-                        "media.class" = "Audio/Sink";
-                        "audio.position" = [ "FL" "FR" ];
-                };
-        }
 
-                ];
-        
-       };
-    };
+        # Audio
+        pulseaudio.enable = false;
+        pipewire = {
+                enable = true;
+                alsa.enable = true;
+                alsa.support32Bit = true;
+                pulse.enable = true;
+                jack.enable = true;
+                #media-session.enable = true;
+                extraConfig.pipewire."10-Virtual-Audio-Cable" = {
+                        context.objects = [
+                                {
+                                        factory = "adapter";
+                                        args = {
+                                                "factory.name" = "support.null-audio-sink";
+                                                "node.name" = "Game-Audio";
+                                                "node.description" = "Game Audio";
+                                                "media.class" = "Audio/Sink";
+                                                "audio.position" = [ "FL" "FR" ];
+                                        };
+                                }
+                        ];
+                };
+        };
     flatpak = {
       enable = true;
       package = pkgs.flatpak;
