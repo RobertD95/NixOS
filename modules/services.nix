@@ -21,20 +21,6 @@
                 pulse.enable = true;
                 jack.enable = true;
                 #media-session.enable = true;
-                extraConfig.pipewire."91-null-sinks" = {
-                        context.objects = [
-                                {
-                                        factory = "adapter";
-                                        args = {
-                                                "factory.name" = "support.null-audio-sink";
-                                                "node.name" = "Game-Audio";
-                                                "node.description" = "Game Audio";
-                                                "media.class" = "Audio/Sink";
-                                                "audio.position" = [ "FL" "FR" ];
-                                        };
-                                }
-                        ];
-                };
         };
     flatpak = {
       enable = true;
