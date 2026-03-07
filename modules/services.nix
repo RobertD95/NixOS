@@ -2,7 +2,8 @@
 {
         services = {
                 displayManager = {
-                        ly = { enable = true; settings.setup_cmd = "/etc/nixos/scripts/hyprland-uwsm-ly-setup.sh";};
+                        #ly = { enable = true; settings.setup_cmd = "/etc/nixos/scripts/hyprland-uwsm-ly-setup.sh";};
+                        sddm = { enable = true; };
                 };
         xserver.xkb = {
         # Keyboard
@@ -28,5 +29,5 @@
         gnome.gnome-keyring.enable = true;
         lact.enable = true; # GPU Over and Under Clock
         udisks2.enable = true; # Used for KDE Dolphin
-  };
+        };
 }
