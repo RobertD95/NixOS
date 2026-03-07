@@ -10,6 +10,7 @@
                 withUWSM = true;
                 package = hypr.hyprland;
                 portalPackage = hypr.xdg-desktop-portal-hyprland;
+                xwayland.enable = true;
                 };
         };
 }
