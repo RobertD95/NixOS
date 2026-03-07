@@ -1,14 +1,17 @@
-{ pkgs, lib, ... }:
+{ pkgs, lib, inputs, ... }:
+let
+        hypr = inputs.hyprland.packages.x86_64-linux;
+in
 {
   services.greetd = {
     enable = true;
     settings = {
       initial_session = {
-        command = "${pkgs.hyprland}/bin/Hyprland -q";
-        user = "haseeb";
+        command = "${hypr.hyprland}/bin/Hyprland -q";
+        user = "robby";
       };
       default_session = {
-        command = "${pkgs.greetd.tuigreet}/bin/tuigreet --remember --asterisks --time --cmd '${pkgs.hyprland}/bin/Hyprland'";
+        command = "${pkgs.greetd.tuigreet}/bin/tuigreet --remember --asterisks --time --cmd '${hypr.hyprland}/bin/Hyprland'";
         user = "greeter";
       };
     };
