@@ -22,6 +22,7 @@
     ./qtalarm
     ./steam
     ./syntax
+    ./tuigreet
     ./waybar
     ./wofi
   ];

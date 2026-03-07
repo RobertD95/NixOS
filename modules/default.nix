@@ -2,6 +2,7 @@
 {
   imports = [
     ./fonts.nix
+    ./greeter.nix
     ./hardware.nix
     ./networking.nix
     ./security.nix
