@@ -1,9 +1,8 @@
 { pkgs, ... }:
 {
         services = {
-                displayManager.ly = {
-                        enable = true;
-                        settings.setup_cmd = "/etc/nixos/scripts/hyprland-uwsm-ly-setup.sh";
+                displayManager = {
+                        ly = { enable = true; settings.setup_cmd = "/etc/nixos/scripts/hyprland-uwsm-ly-setup.sh";};
                 };
         xserver.xkb = {
         # Keyboard
