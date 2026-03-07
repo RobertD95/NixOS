@@ -3,7 +3,7 @@
         services = {
                 displayManager = {
                         #ly = { enable = true; settings.setup_cmd = "/etc/nixos/scripts/hyprland-uwsm-ly-setup.sh";};
-                        sddm = { enable = true; wayland = { enable = true; };
+                        sddm = { enable = true; wayland = { enable = true; }; };
                 };
         xserver.xkb = {
         # Keyboard
