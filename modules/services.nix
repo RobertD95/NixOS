@@ -1,11 +1,12 @@
 { pkgs, ... }:
 {
   services = {
-    displayManager.ly = {
-      # Enable LY & Fix (UWSM)
-      enable = true;
-      settings.setup_cmd = "/etc/nixos/scripts/hyprland-uwsm-ly-setup.sh";
-    };
+        displayManager.sddm.enable = true;
+#displayManager.ly = {
+#Enable LY & Fix (UWSM)
+#enable = true;
+#settings.setup_cmd = "/etc/nixos/scripts/hyprland-uwsm-ly-setup.sh";
+#};
     xserver.xkb = {
       # Keyboard
       layout = "us";
