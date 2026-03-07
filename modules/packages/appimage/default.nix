@@ -1,10 +1,10 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 {
   programs = {
-    appimage = {	# AppImage
+    appimage = {
+      # AppImage
       enable = true;
       binfmt = true;
-      package = pkgs.appimage-run;
     };
   };
 }

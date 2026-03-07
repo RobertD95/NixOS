@@ -1,6 +1,7 @@
 { pkgs, ... }:
 {
-  environment.systemPackages = [
-    pkgs.ffmpeg
+  environment.systemPackages = with pkgs; [
+    ffmpeg
   ];
 }
+

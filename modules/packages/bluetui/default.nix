@@ -1,6 +1,7 @@
 { pkgs, ... }:
 {
-  environment.systemPackages = [
-    pkgs.bluetui
+  environment.systemPackages = with pkgs; [
+    bluetui
   ];
 }
+

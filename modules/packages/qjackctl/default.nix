@@ -1,6 +1,8 @@
 { pkgs, ... }:
 {
-  environment.systemPackages = [
-    pkgs.qjackctl
+  environment.systemPackages = with pkgs; [
+    qjackctl
+    helvum
   ];
 }
+

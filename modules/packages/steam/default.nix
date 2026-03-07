@@ -1,8 +1,9 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 {
   programs = {
     steam = {
-			enable = true;  # Gaming
-		};
+      enable = true; # Gaming
+      package = pkgs.steam;
+    };
   };
 }

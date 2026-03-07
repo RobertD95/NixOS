@@ -1,6 +1,6 @@
 { pkgs, ... }:
 {
-        programs.nvf.settings.vim.filetree.neo-tree = {
-                enable = true;
-        };
+  programs.nvf.settings.vim.filetree.neo-tree = {
+    enable = true;
+  };
 }

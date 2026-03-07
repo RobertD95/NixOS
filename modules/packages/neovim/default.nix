@@ -2,6 +2,7 @@
 {
   imports = [
     ./harpoon.nix
+    ./indent-blankline.nix
     ./lsp.nix
     ./neo-tree.nix
     ./telescope.nix

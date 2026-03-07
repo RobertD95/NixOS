@@ -1,6 +1,7 @@
 { pkgs, ... }:
 {
-  environment.systemPackages = [
-    pkgs.dunst
+  environment.systemPackages = with pkgs; [
+    dunst
   ];
 }
+

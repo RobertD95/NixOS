@@ -1,7 +1,8 @@
 { pkgs, ... }:
 {
-  environment.systemPackages = [
-    pkgs.git
-    pkgs.github-desktop
+  environment.systemPackages = with pkgs; [
+    git
+    github-desktop
   ];
 }
+

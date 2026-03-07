@@ -11,17 +11,20 @@
     ./git
     ./home-manager
     ./hyprland
-    ./java
     ./kde
     ./libdrm
     ./libnotify
     ./neovim
     ./nwg-look
     ./pavucontrol
+    ./pulse-audio
     ./qjackctl
     ./qtalarm
     ./steam
+    ./syntax
+    ./tuigreet
     ./waybar
     ./wofi
   ];
 }
+

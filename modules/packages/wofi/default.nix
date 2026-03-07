@@ -1,6 +1,7 @@
 { pkgs, ... }:
 {
-  environment.systemPackages = [
-    pkgs.wofi
+  environment.systemPackages = with pkgs; [
+    wofi
   ];
 }
+

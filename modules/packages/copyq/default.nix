@@ -1,6 +1,7 @@
 { pkgs, ... }:
 {
-  environment.systemPackages = [
-    pkgs.copyq
+  environment.systemPackages = with pkgs; [
+    copyq
   ];
 }
+
