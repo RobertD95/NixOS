@@ -28,9 +28,10 @@
                 power-profiles-daemon = {
                         package = pkgs.power-profiles-daemon;
                 };
-        printing.enable = true; # Printer
-        gnome.gnome-keyring.enable = true;
-        lact.enable = true; # GPU Over and Under Clock
-        udisks2.enable = true; # Used for KDE Dolphin
+                printing.enable = true; # Printer
+                gnome.gnome-keyring.enable = true;
+                lact.enable = true; # GPU Over and Under Clock
+                udisks2.enable = true; # Used for KDE Dolphin
         };
+        systemd.services.power-profiles-daemon.enable = true;
 }
