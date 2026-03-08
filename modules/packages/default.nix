@@ -4,6 +4,7 @@
     ./alacritty
     ./appimage
     ./bluetui
+    ./brightnessctl
     ./copyq
     ./droidcam
     ./dunst
