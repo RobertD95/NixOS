@@ -1,6 +1,6 @@
 { pkgs, inputs, ... }:
 let
-        hypr = inputs.hyprland.packages.x86_64-linux;
+        hypr = inputs.hyprland.inputs.nixpkgs.packages.x86_64-linux;
         nix = inputs.nix.legacyPackages.x86_64-linux;
         nyx = inputs.nyx.legacyPackages.x86_64-linux;
 in
@@ -9,11 +9,9 @@ in
         hardware = {
                 graphics = {
                         enable = true;
-                        #package = nyx.mesa_git;
-                        package = hypr.mesa;
+                        package = nyx.mesa_git;
                         enable32Bit = true;
-                        #package32 = nyx.mesa32_git;
-                        package32 = hypr.pkgsi686Linux.mesa;
+                        package32 = nyx.mesa32_git;
                 };
                 amdgpu = {
                         initrd.enable = true;
