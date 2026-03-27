@@ -11,6 +11,7 @@
     ./ffmpeg
     ./git
     ./home-manager
+    ./htop
     ./hyprland
     ./kde
     ./libdrm
